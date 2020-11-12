@@ -1,0 +1,15 @@
+{% extends '_base.html' %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+    <p><b>Confirm Auction</b></p>
+    {% if error%}
+    <p> <b>{{ error }}</b> </p>
+    {% endif %}
+    <form action="{% url 'auctions_confirm' %}" method="post">
+        {% csrf_token %}
+        {{ form|crispy }}
+        <a href="{% url 'home' %}" class="btn btn-default">Cancel</a>
+        <input type="submit" value="Confirm" class="btn btn-success">
+    </form>
+{% endblock content%}

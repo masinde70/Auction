@@ -1,0 +1,146 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-02-16 06:26+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: auctions/views.py:76
+msgid "You cannot delete someone else's auction."
+msgstr "Huwezi ondoa isiyo yako"
+
+#: auctions/views.py:120
+msgid ""
+"Your bid is too low. Outbid any previous bids and conform to the minimum bid."
+msgstr "Ongeza pesa"
+
+#: templates/_base.html:19
+#, fuzzy
+#| msgid "About Page"
+msgid "About"
+msgstr "Kuhusu"
+
+#: templates/_base.html:20
+msgid "Language"
+msgstr "Lugha"
+
+#: templates/_base.html:26
+#, fuzzy
+#| msgid "Create Auction"
+msgid "Auctions"
+msgstr "Mnada"
+
+#: templates/_base.html:27 templates/home.html:16
+msgid "Log Out"
+msgstr "Toka"
+
+#: templates/_base.html:28 templates/account/password_change.html:5
+#: templates/account/password_change.html:8
+#: templates/account/password_change.html:13
+msgid "Change Password"
+msgstr ""
+
+#: templates/_base.html:30 templates/home.html:20
+#, fuzzy
+#| msgid "Log Out"
+msgid "Log In"
+msgstr "Ingia"
+
+#: templates/_base.html:31 templates/home.html:21
+msgid "Sign Up"
+msgstr "Jiunge"
+
+#: templates/about.html:6
+msgid "About Page"
+msgstr "Kuhusu"
+
+#: templates/account/email/email_confirmation_message.txt:1
+#, python-format
+msgid ""
+"Hi from %(site_name)s!\n"
+"\n"
+"You're receiving this e-mail because user %(user_display)s has given yours "
+"as an e-mail address to connect their account.\n"
+"\n"
+"To confirm this is correct, go to %(activate_url)s\n"
+msgstr ""
+"Habari kutoka kwetu %(site_name)s!\n"
+"\n"
+"Umepokea barua pepe %(user_display)s ameandika majina yako Thibitisha "
+"%(activate_url)s\n"
+
+#: templates/account/email/email_confirmation_message.txt:7
+#, python-format
+msgid ""
+"Thank you from %(site_name)s!\n"
+"%(site_domain)s"
+msgstr ""
+"Asante sana %(site_name)s!\n"
+"%(site_domain)s"
+
+#: templates/account/email/email_confirmation_subject.txt:3
+msgid "Confirm Your Sign Up"
+msgstr "Thibitisha Usajiri"
+
+#: templates/account/email_confirm.html:4
+#: templates/account/email_confirm.html:6
+msgid "Confirm E-mail Address"
+msgstr "Thibitisha Barua pepe"
+
+#: templates/account/email_confirm.html:10
+#, python-format
+msgid ""
+"\n"
+"    Please confirm that <a href=\"mailto:%(email)s\">%(email)s</a> is an e-"
+"mail address for user\n"
+"   %(user_display)s."
+msgstr ""
+"\n"
+"    Thibitisha <a href=\"mailto:%(email)s\">%(email)s</a> in  barua pepe "
+"mtumaji\n"
+"   %(user_display)s."
+
+#: templates/account/email_confirm.html:16
+msgid "Confirm"
+msgstr "Thibitsha"
+
+#: templates/account/email_confirm.html:21
+#, python-format
+msgid ""
+"This e-mail confirmation link expired or is invalid. Please\n"
+"        <a href=\"%(email_url)s\">issue a new e-mail confirmation request</"
+"a>.\n"
+"    "
+msgstr ""
+"Muda wa kuthibitisha umeisha tafadhari tuma upya\n"
+"        <a href=\"%(email_url)s\">Tuma upya maombi yako</a>.\n"
+"    "
+
+#: templates/home.html:8
+msgid "Homepage"
+msgstr "Nyumbani"
+
+#: templates/home.html:15
+msgid "Create Auction"
+msgstr "Fanya mauzo"
+
+#: yaas/settings.py:136
+msgid "English"
+msgstr "Kiswahili"
+
+#: yaas/settings.py:137
+msgid "Swahili"
+msgstr "English"

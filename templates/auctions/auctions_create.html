@@ -1,0 +1,16 @@
+{% extends '_base.html' %}
+{% load crispy_forms_tags %}
+{% block title %}Create Auction{% endblock title %}
+{%block content %}
+    <p><b>Add Auction</b></p>
+    {% if error%}
+        <p> <b>{{ error }}</b> </p>
+    {% endif %}
+
+    <form action="/auctions/new/" method="post">
+        {% csrf_token %}
+        {{ form|crispy }}
+        <input type="submit" value="Create" class="btn btn-success">
+    </form>
+
+{%endblock content%}

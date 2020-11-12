@@ -1,0 +1,28 @@
+<!-- templates/home.html -->
+{% extends '_base.html' %}
+{% load static %}
+{% load i18n %}
+{% block title %}Home{% endblock title %}
+
+{% block content %}
+<h1>{% trans "Homepage" %}</h1>
+    {% if user.is_authenticated %}
+        Hi {{ user.email }}!
+        <form class="form-inline mt-2 mt-md-0" action="{% url 'search_results' %}"method="get">
+            <input name="q" class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+        </form>
+       <p><a href="{% url 'auctions_create' %}">{% trans "Create Auction" %}</a></p>
+       <p><a href="{% url 'account_logout' %}">{% trans "Log Out" %}</a></p>
+    {% else %}
+       <p>You are not logged in</p>
+       <a href="{% url 'account_login' %}">{% trans "Log In" %}</a>
+       <a href="{% url 'account_signup' %}">{% trans "Sign Up" %}</a>
+
+    {% endif %}
+
+    {% if user.is_superuser %}
+      <br>
+       <a href="{% url 'resolve' %}">Resolve Auctions</a>
+    {% endif %}
+
+{% endblock content %}

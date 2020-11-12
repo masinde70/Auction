@@ -1,0 +1,12 @@
+{% extends '_base.html' %}
+{% block title %}Search{% endblock title %}
+{% block content %}
+<h1>Search Results</h1>
+{% for auction in auction_list %}
+<div>
+   <h3><a href="{{ auction.get_absolute_url }}">{{ auction.title }}</a></h3>
+    <p>Author: {{ auction.author }}</p>
+    <p>Price: € {{ auction.price }}</p>
+</div>
+{% endfor %}
+{% endblock content %}

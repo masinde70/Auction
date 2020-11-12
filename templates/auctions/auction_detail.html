@@ -1,0 +1,40 @@
+{% extends '_base.html' %}
+{% load crispy_forms_tags %}
+ {% load i18n %}
+{% block title %}{{ auction.title }}{% endblock title %}
+
+{% block content %}
+<div class="auction-detail">
+  <h2><a href="">{{ auction.title }}</a></h2>
+    <p>Author: {{ auction.author }}</p>
+    <p>Price: €{{ auction.price }}</p>
+    <p>Description: {{ auction.description }}</p>
+    <p>Deadline: {{ auction.deadline | date}}</p>
+<br>
+    <a href="{% url 'auction_update' auction.pk %}" class="btn btn-primary pull-left">Edit</a>
+<br>
+    <br>
+{% if auction.state == 1 %}
+    <h3>This auction is banned</h3>
+
+{% else %}
+    {% if user.is_superuser %}
+        <form action="{% url 'ban' auction.id %}" method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+        <button class="btn btn-danger" type="submit">Ban</button>
+    {% endif %}
+{% endif %}
+<br>
+<br>
+    <form action="{% url 'bid' auction.pk %} " method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit" class="btn btn-outline-success pull-right">Bid</button>
+    </form>
+    <br>
+ <a class="btn btn-outline-info" href="{% url 'auctions_list' %}">{% trans "Auctions" %}</a>
+<br>
+<br>
+</div>
+{% endblock content %}

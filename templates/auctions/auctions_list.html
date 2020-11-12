@@ -1,0 +1,23 @@
+{% extends '_base.html' %}
+{% load crispy_forms_tags %}
+{% load i18n %}
+{% block title %}Auctions{% endblock title %}
+{% block content %}
+{% for auction in auction_list %}
+    <div>
+      <h2><a href="{{ auction.get_absolute_url }}">{{ auction.title }}</a></h2>
+        <tr>
+            <td>Price: €{{ auction.price }}</td>
+            <td>Description: {{ auction.description }}</td>
+            <td>Deadline: {{ auction.deadline | date }}</td>
+            <form action="{% url 'bid' auction.pk %} " method="post">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <button type="submit" class="btn btn-outline-success pull-right">Bid</button>
+            </form>
+        </tr>
+
+    </div>
+
+{% endfor %}
+{% endblock content %}

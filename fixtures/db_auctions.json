@@ -1,0 +1,125 @@
+[
+{
+  "model": "auctions.auction",
+  "pk": "20fb2407-656f-45ba-ab83-056f37e06942",
+  "fields": {
+    "title": "maji",
+    "description": "gfgfgdss",
+    "author": 4,
+    "price": "4.00",
+    "deadline": "2020-12-22",
+    "state": 0,
+    "created": "2020-05-19T13:07:07.811Z",
+    "last_modified": "2020-05-19T13:07:07.811Z",
+    "version": 0
+  }
+},
+{
+  "model": "auctions.auction",
+  "pk": "452b0db5-eaf9-4b47-9ed7-a76440b7c349",
+  "fields": {
+    "title": "Django for Proffesionals",
+    "description": "afasarwfwgfr",
+    "author": 2,
+    "price": "5.00",
+    "deadline": "2020-11-13",
+    "state": 1,
+    "created": "2020-05-04T08:18:54.886Z",
+    "last_modified": "2020-05-10T17:01:28.530Z",
+    "version": 0
+  }
+},
+{
+  "model": "auctions.auction",
+  "pk": "54acaa92-206c-4b8b-a3bb-09833a70c3d0",
+  "fields": {
+    "title": "Django for Proffesionals12",
+    "description": "weery",
+    "author": 3,
+    "price": "44.00",
+    "deadline": "2020-11-12",
+    "state": 1,
+    "created": "2020-05-05T09:35:23.813Z",
+    "last_modified": "2020-05-10T17:01:08.224Z",
+    "version": 0
+  }
+},
+{
+  "model": "auctions.auction",
+  "pk": "b6da35dc-b208-4f9c-9854-c8c3ff1a9333",
+  "fields": {
+    "title": "Django for Proffesionals12",
+    "description": "dafsafafsadfsa",
+    "author": 2,
+    "price": "778.00",
+    "deadline": "2020-12-22",
+    "state": 0,
+    "created": "2020-05-10T17:04:25.582Z",
+    "last_modified": "2020-05-19T12:59:44.747Z",
+    "version": 0
+  }
+},
+{
+  "model": "auctions.bid",
+  "pk": 1,
+  "fields": {
+    "auction": "452b0db5-eaf9-4b47-9ed7-a76440b7c349",
+    "bidder": 3,
+    "amount": "7.00"
+  }
+},
+{
+  "model": "auctions.bid",
+  "pk": 2,
+  "fields": {
+    "auction": "452b0db5-eaf9-4b47-9ed7-a76440b7c349",
+    "bidder": 3,
+    "amount": "7.01"
+  }
+},
+{
+  "model": "auctions.bid",
+  "pk": 3,
+  "fields": {
+    "auction": "452b0db5-eaf9-4b47-9ed7-a76440b7c349",
+    "bidder": 3,
+    "amount": "7.03"
+  }
+},
+{
+  "model": "auctions.bid",
+  "pk": 4,
+  "fields": {
+    "auction": "452b0db5-eaf9-4b47-9ed7-a76440b7c349",
+    "bidder": 3,
+    "amount": "76.99"
+  }
+},
+{
+  "model": "auctions.bid",
+  "pk": 5,
+  "fields": {
+    "auction": "452b0db5-eaf9-4b47-9ed7-a76440b7c349",
+    "bidder": 3,
+    "amount": "78.03"
+  }
+},
+{
+  "model": "auctions.bid",
+  "pk": 6,
+  "fields": {
+    "auction": "452b0db5-eaf9-4b47-9ed7-a76440b7c349",
+    "bidder": 3,
+    "amount": "788.00"
+  }
+},
+{
+  "model": "auctions.bid",
+  "pk": 7,
+  "fields": {
+    "auction": "452b0db5-eaf9-4b47-9ed7-a76440b7c349",
+    "bidder": 3,
+    "amount": "74844.12"
+  }
+}
+]
